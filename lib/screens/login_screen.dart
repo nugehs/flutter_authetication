@@ -15,6 +15,9 @@ class LoginScreen extends StatelessWidget {
         if (!snapshot.hasData) {
           return const SignInScreen(providerConfigs: [
             EmailProviderConfiguration(),
+            GoogleProviderConfiguration(
+                clientId: '1:816031631112:android:0e26cda78a5c31d609cebd'),
+            PhoneProviderConfiguration(),
           ]);
         }
 
